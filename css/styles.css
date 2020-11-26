@@ -1,0 +1,356 @@
+body {
+  /* font-family: "Roboto"; */
+  text-align: center;
+}
+
+@font-face{
+  font-family: avengeance;
+  src: url('Portfolio NJ/css/avengeance/AVENGEANCE HEROIC AVENGER AT.ttf') format("truetype");
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+
+.navbar-brand{
+  font-family: avengeance;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+.navlink{
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+#home{
+  background-color: #14b1ab;
+  color: white;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.title-image{
+  width: 60%;
+  transform: rotate(0);
+  position: static;
+  right: 30%;
+  border-radius: 50%;
+}
+
+.desc{
+  padding-top: 20%;
+}
+
+#about{
+  text-align: justify;
+  padding: 10%;
+}
+
+
+
+#contact {
+  background: #252827;
+  font-size: 16px;
+}
+p {
+  font-weight: 300;
+}
+#contact a {
+  color: #6c6d6d;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: .3em;
+  font-size: .6em;
+  font-weight: 400;
+  background: #252727;
+  padding: .3rem 1rem;
+  margin: 1.9rem 0 0 0;
+  float: right;
+}
+#contact a:hover {
+  color: white;
+  background: #004ffc;
+  border-bottom: .35em solid black;
+}
+#contact strong {
+  font-weight: 600;
+}
+#contact h1 {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+.timeline {
+  border-left: 4px solid #004ffc;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255,255,255,0.03);
+  color: rgba(255,255,255,0.8);
+  font-family: 'Chivo', sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+}
+.timeline h1 {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255,255,255,0.1);
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: rgba(255,255,255,0.4);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+  font-family: 'Saira', sans-serif;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #004ffc;
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+
+
+
+@media (max-width:600px) {
+
+
+
+.nav__cont {
+  position: fixed;
+  width: 20px;
+  top: 0;
+  right:0;
+  height: 100vh;
+  z-index: 100;
+  background-color: #202020;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  cursor: pointer;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+}
+
+
+.nav__cont:hover {
+  width: 200px;
+}
+
+.nav {
+  list-style-type: none;
+  color: white;
+}
+.nav:first-child {
+  padding-top: 1.5rem;
+}
+.nav__items {
+  padding-bottom: 4rem;
+  font-family: 'roboto';
+}
+.nav__items a {
+  position: relative;
+  display: block;
+  top: -35px;
+  padding-left: 25px;
+  padding-right: 15px;
+  transition: all 0.3s ease;
+  margin-left: 25px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'roboto';
+  font-weight: 100;
+  font-size: 1.35em;
+}
+.nav__items a:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  background: radial-gradient(circle at 94.02% 88.03%, #54a4ff, transparent 100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: -10;
+}
+.nav__items:hover a:after {
+  opacity: 1;
+}
+.nav__items svg {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  left: -25px;
+  cursor: pointer;
+}
+}
+
+
+h1 {
+  margin-top: 6rem;
+  margin-left: 80px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 6px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards */
+
+
+
+
+.carda {
+
+  position: relative;
+  display: inline-block;
+
+  margin: 0;
+
+
+
+  top: 150px;
+  left: 20%;
+  height: 300px;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: .5s; }
+  .carda:hover .card-front {
+    transform: rotateX(-180deg); }
+  .carda:hover .card-back {
+    transform: rotateX(0deg); }
+    .carda:hover  {
+      margin:20px; }
+
+.card-front {
+  height: 100%;
+  width: 100%;
+
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: .5s; }
+
+.card-fronta{
+  background-image: url("../images/Blackhole1.jpg");
+
+}
+
+.card-frontb{
+  background-image: url("../images/Blackhole2.jpg");
+}
+
+.card-frontc{
+  background-image: url("../images/Blackhole3.jpg");
+
+}
+
+.card-frontd{
+  background-image: url("../images/Blackhole4.jpg");
+
+}
+
+
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: .5s;
+  color: #ffffff;
+  text-align: center; }
+  .card-back h2 {
+    margin: 60% auto 35% auto;
+    font-size: 26px; }
+    .card-back h2 span {
+      font-size: 20px; }
+  .card-back a {
+    height: 20px;
+    width: 20px;
+    padding: 5px 5px;
+    border-radius: 4px;
+    line-height: 20px; }
+    .card-back a:hover {
+      color: #000000;
+      background-color: #fff; }
+
+
+
+#skills{
+  display: flex;
+  justify-content: space-evenly;
+
+}
